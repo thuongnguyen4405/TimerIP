@@ -58,20 +58,50 @@ timer_ip/
 5) **interupt**: fix TIER offset = 0x014, RW1C đúng nghĩa, chống retrigger khi counter bị halt tại đúng compare value.
 
 ## 5. Build & Run (Ubuntu)
-### Yêu cầu
-- Ubuntu
-- Khuyến nghị: **Questa/ModelSim** để chạy coverage
-- Tối thiểu: **iverilog** để compile/sim basic
+## Yêu cầu
+- Ubuntu / Windows (Git Bash)
+- Tối thiểu: iverilog + vvp
+- Khuyến nghị: gtkwave (xem waveform)
 
-### Chạy sim nhanh
+## Chạy simulation (iverilog)
+
 ```bash
-make SIM=iverilog sim
-```
+make
+# hoặc
+make run
 
 ### Chạy sim + coverage (Questa)
 ```bash
 make SIM=questa cov
 ```
+
+👉 tương ứng với target:
+```makefile
+all: run
+run: $(OUT_VVP)
+## Compile (không chạy)
+
+```bash
+make build
+
+---
+
+### 🔹 Xem waveform
+```md
+## Xem waveform (GTKWave)
+
+```bash
+make wave
+Lưu ý: testbench phải có $dumpfile("build/wave.vcd")
+
+---
+
+### 🔹 Clean
+```md
+## Clean build
+
+```bash
+make clean
 
 ## 6. Coding style / Checklist chất lượng
 - 1 owner cho 1 register (tránh race & mismatch)
