@@ -46,6 +46,21 @@ timer_ip/
   - `counter` → load counter khi SW write TDR0/TDR1; increment theo tick; clear khi timer_en H→L (advanced)
   - `interupt` → RW1C TISR, enable TIER, compare CNT==TCMP phát interrupt
 - Gate tick khi halt (debug_mode & halt_req)
+## RESULTS IN WAVEFORM GTKWAVE BY DUMPING FILE 
+----------------------------------------------------APB_MASTER_SLAVE--------------------------------------------------------------
+<img width="1535" height="395" alt="image" src="https://github.com/user-attachments/assets/18a35f8b-8e1e-4c63-9816-2ef24895e23e" />
+----------------------------------------------------COUNTER_CONTROL---------------------------------------------------------------
+<img width="1711" height="671" alt="image" src="https://github.com/user-attachments/assets/c483cd38-c7ae-49bb-a107-e28e3fd79fc2" />
+----------------------------------------------------COUNTER-----------------------------------------------------------------------
+<img width="1716" height="648" alt="image" src="https://github.com/user-attachments/assets/b67b417c-6541-4c72-8df0-6b2e5290f1eb" />
+
+----------------------------------------------------INTERRUPT--------------------------------------------------------------------
+<img width="1732" height="777" alt="image" src="https://github.com/user-attachments/assets/19d5e6ac-6738-4b92-8baa-222fd7851372" />
+
+----------------------------------------------------REGISTER--------------------------------------------------------------------
+<img width="1628" height="789" alt="image" src="https://github.com/user-attachments/assets/22d71479-590c-4a2e-856d-a5a0490c83a1" />
+
+
 
 ## 5. Build & Run (Ubuntu)
 ## Yêu cầu
@@ -101,11 +116,9 @@ make clean
 - Có gating debug halt
 - Có clear-on-disable (advanced)
 
-### RESULTS
 
-## WAVEFORM IN GTKWAVE by dumping file vcd 
 
-<img width="1535" height="395" alt="image" src="https://github.com/user-attachments/assets/9b5272ce-a3fb-4b65-8e0d-1eb924859946" />
+
 
 
 
