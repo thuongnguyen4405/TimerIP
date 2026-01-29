@@ -9,7 +9,7 @@ Dự án này xây dựng một **Timer IP** giao tiếp qua **APB** theo đúng
 - Interrupt block quản lý TIER/TISR, so sánh CNT với TCMP và phát `interrupt`
 - Debug/Halt mode: khi `debug_mode=1` và `halt_req=1` thì dừng counter
 
-Ngoài “basic”, package này cũng hỗ trợ **advanced features** thường dùng trong rubric:
+ **advanced features** thường dùng trong rubric:
 - Byte access (PSTRB)
 - Wait-state (PREADY) cấu hình bằng parameter
 - Error response (PSLVERR) cho case cấu hình div sai/không hợp lệ
