@@ -24,8 +24,8 @@ Ngoài “basic”, package này cũng hỗ trợ **advanced features** thườn
 
 ## 3. Cấu trúc thư mục
 ```
-timer_apb_project_professional_v2/
-├── rtl/
+timer_ip/
+├── src/
 │   ├── top_module.v         # TOP integration (connect all signals)
 │   ├── apb_slave.v          # APB front-end (PREADY/PSLVERR/PSTRB)
 │   ├── register.v           # Regfile (TCR/TDR/TCMP/THCSR)
