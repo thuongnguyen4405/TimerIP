@@ -1,4 +1,4 @@
-# APB TIMER IP – RTL + Verification Package (Professional)
+# APB TIMER IP – RTL + Verification Package 
 
 ## 1. Mục tiêu dự án
 Dự án này xây dựng một **Timer IP** giao tiếp qua **APB** theo đúng block diagram bạn gửi:
