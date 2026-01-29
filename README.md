@@ -102,19 +102,16 @@ make clean
 - Có clear-on-disable (advanced)
 
 ### RESULTS
--Target of Makefile: <img width="385" height="42" alt="image" src="https://github.com/user-attachments/assets/1ae3dd7f-2fac-49c0-9daf-d666438880bf" />
-gk<img width="1367" height="864" alt="image" src="https://github.com/user-attachments/assets/878e905f-01fd-418b-b1d5-767384a77a98" />
+
 ## WAVEFORM IN GTKWAVE by dumping file vcd 
 -------------------------------------------COUNTER---------------------------------------------------------------------------------
-<img width="1577" height="293" alt="image" src="https://github.com/user-attachments/assets/a551ce3b-2776-4333-94cd-18ef956d83ac" />
+
 -------------------------------------------APB_MASTER_SLAVE------------------------------------------------------------------------
-<img width="1621" height="293" alt="image" src="https://github.com/user-attachments/assets/1e91304a-0355-49fb-b4e2-0a7ed2f5c952" />
+<img width="1553" height="474" alt="image" src="https://github.com/user-attachments/assets/93a42923-1fed-42d8-b388-21769a6ce384" />
+
 --------------------------------------------COUNTER_CONTROL-------------------------------------------------------------------------
-<img width="1901" height="763" alt="image" src="https://github.com/user-attachments/assets/ac67f993-b796-4aa7-8e8c-12b5f508f4dd" />
 --------------------------------------------REGISTER--------------------------------------------------------------------------------
-<img width="1915" height="1008" alt="image" src="https://github.com/user-attachments/assets/ccd5a8d5-191e-4d9b-b69a-afb63b77b5d0" />
 --------------------------------------------INTERUPT--------------------------------------------------------------------------------
-<img width="1632" height="468" alt="image" src="https://github.com/user-attachments/assets/2b175e5d-7ad3-4092-b877-f4f0d306ec29" />
 
 
 
