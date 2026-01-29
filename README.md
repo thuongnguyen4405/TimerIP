@@ -18,12 +18,6 @@ Ngoài “basic”, package này cũng hỗ trợ **advanced features** thườn
 <img width="1341" height="619" alt="image" src="https://github.com/user-attachments/assets/5ef81225-16f4-49cc-b721-8e34c6760e2a" />
 Fig 1. Block Diagram designed by ICTC center 
 
-Để tránh double-definition và tránh bug khó debug, ownership được phân chia:
-- `register.v`: **TCR, TDR0/1, TCMP0/1, THCSR**
-- `interupt.v`: **TIER, TISR (RW1C), tim_int**
-- `top_module.v`: mux read-data cho các vùng ownership + kết nối tất cả blocks
-
-> Lưu ý: file `interupt.v` giữ nguyên tên theo bạn để không phá flow build cũ.
 
 ## 3. Cấu trúc thư mục
 ```
@@ -52,13 +46,6 @@ timer_ip/
   - `counter` → load counter khi SW write TDR0/TDR1; increment theo tick; clear khi timer_en H→L (advanced)
   - `interupt` → RW1C TISR, enable TIER, compare CNT==TCMP phát interrupt
 - Gate tick khi halt (debug_mode & halt_req)
-
-### Các fix chính (so với RTL ban đầu của bạn)
-1) **apb_slave**: sửa hướng port, sửa read-enable, sửa masking PSTRB (tránh combinational loop), thêm BASE decode + WAIT_STATE.
-2) **counter_control**: fix bug “count_en luôn 1” khi div_en=1; implement tick chuẩn `2^div_val`.
-3) **counter**: fix semantics SW write TDR = load counter; bỏ kiểu snapshot lệch spec.
-4) **register**: fix default TCR (timer_en=0, div_val=1), fix halt_ack RO và single-driver; thêm rule error khi đổi div fields lúc timer đang chạy.
-5) **interupt**: fix TIER offset = 0x014, RW1C đúng nghĩa, chống retrigger khi counter bị halt tại đúng compare value.
 
 ## 5. Build & Run (Ubuntu)
 ## Yêu cầu
