@@ -1,7 +1,7 @@
 # APB TIMER IP – RTL + Verification Package 
 
 ## 1. Mục tiêu dự án
-Dự án này xây dựng một **Timer IP** giao tiếp qua **APB** theo đúng block diagram bạn gửi:
+Dự án này xây dựng một **Timer IP** giao tiếp qua **APB** theo đúng block diagram:
 - APB Slave nhận giao dịch bus
 - Register File lưu cấu hình (TCR/TDR/TCMP/THCSR)
 - Counter Control tạo nhịp đếm theo chế độ default / divider
