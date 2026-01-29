@@ -14,7 +14,10 @@ Ngoài “basic”, package này cũng hỗ trợ **advanced features** thườn
 - Wait-state (PREADY) cấu hình bằng parameter
 - Error response (PSLVERR) cho case cấu hình div sai/không hợp lệ
 
-## 2. Kiến trúc / Ownership rõ ràng (đúng kiểu công ty)
+## 2. Kiến trúc / Ownership rõ ràng 
+<img width="1341" height="619" alt="image" src="https://github.com/user-attachments/assets/5ef81225-16f4-49cc-b721-8e34c6760e2a" />
+Fig 1. Block Diagram designed by ICTC center 
+
 Để tránh double-definition và tránh bug khó debug, ownership được phân chia:
 - `register.v`: **TCR, TDR0/1, TCMP0/1, THCSR**
 - `interupt.v`: **TIER, TISR (RW1C), tim_int**
