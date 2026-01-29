@@ -81,6 +81,4 @@ make SIM=questa cov
 - Có gating debug halt
 - Có clear-on-disable (advanced)
 
-## 7. Contact / Notes
-Nếu bạn muốn “chuẩn rubric 100%” theo course (bao gồm check byte-access corner, wait-state exact waveforms),
-mình có thể bổ sung thêm testcase/cross coverage để coverage ổn định >95%.
+
